@@ -13,12 +13,12 @@ def get_predictions(brand, screen_size, ram, rom, mp, battery):
     return price
 
 
-brand = st.number_input("Enter brand")
-screen_size = st.text_input("Enter screen_size")
-ram = st.text_input("Enter ram")
-rom = st.text_input("Enter rom")
-mp = st.text_input("Enter mp")
-battery = st.text_input("Enter battery")
+brand = st.text_input("Enter brand")
+screen_size = st.number_input("Enter screen_size")
+ram = st.number_input("Enter ram")
+rom = st.number_input("Enter rom")
+mp = st.number_input("Enter mp")
+battery = st.number_input("Enter battery")
 
 
 result = ""
