@@ -4,7 +4,7 @@ import requests
 st.title('Phone Purchase App')
 
 
-def get_predictions(carat_weight, cut, color, clarity, polish, symmetry, report):
+def get_predictions(brand, screen_size, ram, rom, mp, battery):
     url = 'https://phone-price-pred.herokuapp.com/predict?brand={brand}&screen_size={screen_size}&ram={ram}&rom={rom}&mp={mp}&battery={battery}' \
         .format(brand=brand, screen_size=screen_size, ram=ram, rom=rom, mp=mp, battery=battery)
     response = requests.post(url)
