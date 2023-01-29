@@ -1,5 +1,6 @@
 # 1. Library imports
 import pandas as pd
+import numpy as np
 import pickle
 from fastapi import FastAPI
 import uvicorn
@@ -16,7 +17,7 @@ def predict(brand, screen_size, ram, rom, mp, battery):
     data = pd.DataFrame([[brand, screen_size, ram, rom, mp, battery]])
     data.columns = ['brand', 'screen_size', 'ram', 'rom', 'mp', 'battery']
 
-    predictions = loaded_model.predict(data) 
+    predictions = np.exp(loaded_model.predict(data)) 
     return {'prediction': int(predictions[0])}
 
 if __name__ == '__main__':

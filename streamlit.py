@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 import requests
 
 st.title('Phone Purchase App')
@@ -25,5 +26,5 @@ result = ""
 
 # when 'Predict' is clicked, make the prediction and store it
 if st.button("Predict"):
-    result= get_predictions(brand=brand, screen_size=screen_size, ram=ram, rom=rom, mp=mp, battery=battery)
+    result = int(np.exp(get_predictions(brand=brand, screen_size=screen_size, ram=ram, rom=rom, mp=mp, battery=battery)))
     st.success(f'Price of Phone  {result}')
