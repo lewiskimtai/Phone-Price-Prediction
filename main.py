@@ -17,7 +17,7 @@ def predict(brand, screen_size, ram, rom, mp, battery):
     data.columns = ['brand', 'screen_size', 'ram', 'rom', 'mp', 'battery']
 
     predictions = loaded_model.predict(data) 
-    return {'prediction': int(predictions['Label'][0])}
+    return {'prediction': int(predictions[0])}
 
 if __name__ == '__main__':
     uvicorn.run(app, host='127.0.0.1', port=8000)
