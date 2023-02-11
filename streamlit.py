@@ -23,7 +23,7 @@ def get_predictions(brand, screen_size, ram, rom, mp, battery):
 st.sidebar.image('photos/logo.png')
 st.sidebar.header("Phone Price Prediction")
 menu = ['Get Price','Exploratory Data Analysis','About']
-selection = st.sidebar.selectbox("Key Performance Indicator (KPI) ", menu)
+selection = st.sidebar.selectbox("", menu)
 
 st.sidebar.write('Predicting prices of phones in relation to their specs is helpful to gadget retailers to set prices varying to specs and also helpful to buyers to buy their dream phones with particular specs at affordable prices.')
 
@@ -36,10 +36,10 @@ if selection == 'Get Price':
         st.image('photos/specs.png')
         brand = st.selectbox('Select Brand', ['Nokia', 'Samsung', 'Infinix', 'Tecno', 'Redmi', 'Itel', 'Vivo', 'Hisence', 'Oppo', 'Motorola', 'Realme'])
         screen_size = st.number_input("Enter screen_size")
-        ram = st.number_input("Enter ram")
-        rom = st.number_input("Enter rom")
-        mp = st.number_input("Enter mp")
-        battery = st.number_input("Enter battery")
+        ram = st.number_input("Enter RAM capacity")
+        rom = st.number_input("Enter ROM capacity")
+        mp = st.number_input("Enter Camera mega Pixels")
+        battery = st.number_input("Enter battery capacity")
 
         result = ""
 
