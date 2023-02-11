@@ -31,9 +31,9 @@ st.sidebar.write('Predicting prices of phones in relation to their specs is help
 if selection == 'Get Price':
     col1, col2 = st.columns(2)
     with col1:
-        st.image('phones.jpg')
+        st.image('photos/phones.jpg')
         st.title('Enter your dream phone features')
-        st.image('specs.png')
+        st.image('photos/specs.png')
         brand = st.selectbox('Select Brand', ['Nokia', 'Samsung', 'Infinix', 'Tecno', 'Redmi', 'Itel', 'Vivo', 'Hisence', 'Oppo', 'Motorola', 'Realme'])
         screen_size = st.number_input("Enter screen_size")
         ram = st.number_input("Enter ram")
@@ -47,10 +47,10 @@ if selection == 'Get Price':
         if st.button("Predict"):
             result = int(np.exp(get_predictions(brand=brand, screen_size=screen_size, ram=ram, rom=rom, mp=mp, battery=battery)))
             st.success(f'Price of Phone: {result} UGX')
-            st.image('phoness.jpg')
+            st.image('photos/phoness.jpg')
 
     with col2:
-        st.image('phonesss.jpg')
+        st.image('photos/phonesss.jpg')
         
 # Exploratory Data Analysis Functionality
 if selection == 'Exploratory Data Analysis':    

@@ -7,23 +7,25 @@ There are very many brands of phones in the market today and these brands come w
 ## Project Breakdown.
 This project comprises of four code file:
 
-- [jumia_webscrapper.ipynb] - Scrapes data about phones sold on jumia website ["https://www.jumia.ug/smartphones/"] and saves into 
-                                [Phones.csv], 
-                            - It loads that data and removes any discrepancies making the data clean and saves it in 
-                                [phone_df.csv].
+- #### jumia_webscrapper.ipynb 
+    - Scrapes data about phones sold on jumia website ["https://www.jumia.ug/smartphones/"] and saves into [Phones.csv] 
+    - It loads that data and removes any discrepancies making the data clean and saves it in [phone_df.csv].
 
-- [phone.ipynb] -  Loads the data from [phone_df.csv] and does the Exploratory Data Analysis on the data.
-                -  Data preprocessing steps(Handling outliers, Target and Category encoding and scaling)
-                - Fits and trains the data on mulitple algorithms (ElasticNetCV, DecisionTreeRegressor, BaggingRegressor, AdaBoostRegressor, 
-                  KNeighborsRegressor, LinearRegression, GradientBoostingRegressor) and finds the best algorithm as GradientBoostingRegressor.
-                - Saves the model into the [phone_price_prediction.pkl] file.
+- #### phone.ipynb 
+    -  Loads the data from [phone_df.csv] and does the Exploratory Data Analysis on the data.
+    -  Data preprocessing steps(Handling outliers, Target and Category encoding and scaling)
+    - Fits and trains the data on mulitple algorithms (ElasticNetCV, DecisionTreeRegressor, BaggingRegressor, AdaBoostRegressor,                
+       KNeighborsRegressor, LinearRegression, GradientBoostingRegressor) and finds the best algorithm as GradientBoostingRegressor.
+    - Saves the model into the [phone_price_prediction.pkl] file.
 
-- [main.py] - Loads the model and uses FASTAPI to create an API hosted on Heroku. 
-            - Manages requests and makes predictions based on the parameters.
+- #### main.py 
+    - Loads the model and uses FASTAPI to create an API hosted on Heroku. 
+    - Manages requests and makes predictions based on the parameters.
 
-- [streamlit.py] - The API endpoint that comprises of the User Interface in Streamlit.
-                 - Takes in user inputs and passes the values through the API and makes predictions.
-                 - Also comprises of the Exploratory Data Analysis functionality that is a dashboard for the user to visualize the data.
+- #### streamlit.py 
+    - The API endpoint that comprises of the User Interface in Streamlit.
+    - Takes in user inputs and passes the values through the API and makes predictions.
+    - Also comprises of the Exploratory Data Analysis functionality that is a dashboard for the user to visualize the data.
 
 ## Tools used:
 As seen in the [requirements.txt] file
@@ -59,7 +61,7 @@ virtualenv env
 ```
 3. To activate the environment you must be in the directory where the environment was created
  ```sh
-cd <envname>
+cd env
 ```
 then
  ```sh
