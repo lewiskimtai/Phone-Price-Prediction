@@ -46,7 +46,7 @@ if selection == 'Get Price':
         # when 'Predict' is clicked, make the prediction and store it
         if st.button("Predict"):
             result = int(np.exp(get_predictions(brand=brand, screen_size=screen_size, ram=ram, rom=rom, mp=mp, battery=battery)))
-            st.success(f'Price of Phone  {result}')
+            st.success(f'Price of Phone: {result} UGX')
             st.image('phoness.jpg')
 
     with col2:
