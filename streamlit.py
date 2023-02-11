@@ -34,12 +34,12 @@ if selection == 'Get Price':
         st.image('photos/phones.jpg')
         st.title('Enter your dream phone features')
         st.image('photos/specs.png')
-        brand = st.selectbox('Select Brand', ['Nokia', 'Samsung', 'Infinix', 'Tecno', 'Redmi', 'Itel', 'Vivo', 'Hisence', 'Oppo', 'Motorola', 'Realme'])
-        screen_size = st.number_input("Enter screen_size")
-        ram = st.number_input("Enter RAM capacity")
-        rom = st.number_input("Enter ROM capacity")
-        mp = st.number_input("Enter Camera mega Pixels")
-        battery = st.number_input("Enter battery capacity")
+        brand = st.selectbox('Select Brand', ['', 'Nokia', 'Samsung', 'Infinix', 'Tecno', 'Redmi', 'Itel', 'Vivo', 'Hisence', 'Oppo', 'Motorola', 'Realme'], index=0)
+        screen_size = st.number_input("Enter screen_size (Size of the screen)")
+        ram = st.number_input("Enter RAM capacity (RAM defines how fast the phone is)")
+        rom = st.number_input("Enter ROM capacity (ROM defines memory storage)")
+        mp = st.number_input("Enter Megapixels (Defines the resolution and quality of photos taken)")
+        battery = st.number_input("Enter battery capacity (Defines battery life)")
 
         result = ""
 
