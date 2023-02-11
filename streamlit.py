@@ -100,4 +100,54 @@ if selection == 'Exploratory Data Analysis':
     fig.update_layout(width=900, height=500)
     st.plotly_chart(fig)
 
+# adding html  Template
+
+footer_temp = """
+	 <!-- CSS  -->
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	 <footer class="page-footer grey darken-4">
+	    <div class="container" id="aboutapp">
+	      <div class="row">
+	        <div class="col l6 s12">
+	          <h5 class="white-text">Phone Price Prediction</h5>
+	          <p class="grey-text text-lighten-4">Streamlit Practical.</p>
+	        </div>
+	   <div class="col l3 s12">
+	          <h5 class="white-text">Connect With Me</h5>
+	          <ul>
+	          <a href="www.linkedin.com/in/lewis-kimtai" target="_blank" class="white-text">
+	            <i class="fab fa-linkedin fa-4x"></i>
+	          </a>
+	           <a href="https://github.com/lewiskimtai" target="_blank" class="white-text">
+	            <i class="fab fa-github-square fa-4x"></i>
+	          </a>
+	          </ul>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="footer-copyright">
+	      <div class="container">
+	      Made by <a class="white-text text-lighten-3" https://lewiskimtai.github.io/">Kimtai Lewis</a><br/>
+	      <a class="white-text text-lighten-3" href="https://lewiskimtai.github.io/"></a>
+	      </div>
+	    </div>
+	  </footer>
+	"""
+
+
+# About Functionality
+if selection == 'About':
+    st.subheader("About App")
+    st.sidebar.write('''
+                        Finding a dream phone at a friendly price without compromising on the ideal features seems impossible, but with this 
+                        app it makes it possible. This app is built on data about different phone brands, features and their respective prices.
+                        Trained to predict your favorite phone price according to its specs and brand making it easy for you to afford your 
+                        number one dream phone.
+                    ''')
+    components.html(footer_temp, height=500)
+
+
 
