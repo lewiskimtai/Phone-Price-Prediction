@@ -141,7 +141,7 @@ footer_temp = """
 # About Functionality
 if selection == 'About':
     st.subheader("About App")
-    st.sidebar.write('''
+    st.text('''
                         Finding a dream phone at a friendly price without compromising on the ideal features seems impossible, but with this 
                         app it makes it possible. This app is built on data about different phone brands, features and their respective prices.
                         Trained to predict your favorite phone price according to its specs and brand making it easy for you to afford your 
