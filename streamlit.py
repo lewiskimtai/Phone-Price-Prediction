@@ -21,7 +21,7 @@ def get_predictions(brand, screen_size, ram, rom, mp, battery):
 
 # Side Bar
 st.sidebar.image('logo.png')
-st.sidebar.header("Phone Purchase App")
+st.sidebar.header("Phone Price Prediction")
 menu = ['Get Price','Exploratory Data Analysis','About']
 selection = st.sidebar.selectbox("Key Performance Indicator (KPI) ", menu)
 
