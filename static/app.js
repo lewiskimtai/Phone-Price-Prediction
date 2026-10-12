@@ -400,7 +400,7 @@ async function init() {
     return;
   }
 
-  $('data-note').textContent = `Prices learned from ${phones.length} phones on sale at MobileShop Uganda`;
+  $('data-note').textContent = `Prices learned from ${phones.length} phones on sale at MobileShop Uganda and Dondolo`;
   buildRuler();
 
   forms.a = new PhoneForm('a');

@@ -1,4 +1,13 @@
 model,release_year
+Google Pixel 10,2025
+Google Pixel 10 Pro,2025
+Google Pixel 10 Pro Fold,2025
+Google Pixel 10 Pro XL,2025
+Google Pixel 10a,2026
+Google Pixel 11,2026
+Google Pixel 11 Pro,2026
+Google Pixel 11 Pro Fold,2026
+Google Pixel 11 Pro XL,2026
 Google Pixel 6,2021
 Google Pixel 6 Pro,2021
 Google Pixel 6a,2022
@@ -10,18 +19,9 @@ Google Pixel 8 Pro,2023
 Google Pixel 8a,2024
 Google Pixel 9,2024
 Google Pixel 9 Pro,2024
-Google Pixel 9 Pro XL,2024
 Google Pixel 9 Pro Fold,2024
+Google Pixel 9 Pro XL,2024
 Google Pixel 9a,2025
-Google Pixel 10,2025
-Google Pixel 10 Pro,2025
-Google Pixel 10 Pro XL,2025
-Google Pixel 10 Pro Fold,2025
-Google Pixel 10a,2026
-Google Pixel 11,2026
-Google Pixel 11 Pro,2026
-Google Pixel 11 Pro XL,2026
-Google Pixel 11 Pro Fold,2026
 Google Pixel Fold,2023
 Honor Magic 8 Pro,2025
 Honor Magic V5,2025
@@ -39,9 +39,21 @@ Infinix Note 50 Pro Plus,2025
 Infinix Note 60 Pro,2026
 Infinix Note Edge,2025
 Infinix Smart 20,2026
+iPhone 11,2019
+iPhone 12,2020
+iPhone 13,2021
+iPhone 14,2022
+iPhone 15,2023
+iPhone 16,2024
+iPhone 17,2025
+iPhone 18,2026
+iPhone Air,2025
+iPhone Duo,2026
+iPhone X,2017
+iPhone XR,2018
+iPhone XS,2018
 Motorola Razr 40s,2023
 Motorola Razr 50s,2024
-Nubia Focus,2024
 Nokia 105,2023
 Nokia 106,2023
 Nokia 108,2024
@@ -64,7 +76,10 @@ Nothing Phone 3a,2025
 Nothing Phone 3a Pro,2025
 Nothing Phone 4a,2026
 Nothing Phone 4a Pro,2026
+Nubia Focus,2024
 OnePlus 12,2023
+OnePlus 13,2024
+OnePlus 13R,2025
 OnePlus 13s,2025
 OnePlus 15,2025
 OnePlus 15R,2025
@@ -82,6 +97,7 @@ Oppo Reno 14F,2025
 Oppo Reno 15,2025
 Oppo Reno 15 Pro,2025
 Oppo Reno 15F,2026
+Oppo Reno 16F,2026
 Oppo Reno 5A,2021
 Poco M8,2026
 Poco X7 Pro,2025
@@ -103,6 +119,7 @@ Redmi Note 14,2024
 Redmi Note 15,2025
 Redmi Note 15 Pro,2025
 Redmi Note 15 Pro Plus,2025
+Samsung Galaxy A05,2023
 Samsung Galaxy A05s,2023
 Samsung Galaxy A06,2024
 Samsung Galaxy A07,2025
@@ -127,10 +144,12 @@ Samsung Galaxy F14,2023
 Samsung Galaxy F16,2025
 Samsung Galaxy F34,2023
 Samsung Galaxy F55,2024
+Samsung Galaxy F56,2025
 Samsung Galaxy M06,2025
 Samsung Galaxy M16,2025
 Samsung Galaxy M33,2022
 Samsung Galaxy M36,2025
+Samsung Galaxy M56,2025
 Samsung Galaxy S20,2020
 Samsung Galaxy S20 FE,2020
 Samsung Galaxy S21,2021
@@ -180,16 +199,3 @@ ZTE Blade V80 Max,2026
 ZTE Nubia Flip,2024
 ZTE Nubia Music,2025
 ZTE Nubia Neo 2,2024
-iPhone 11,2019
-iPhone 12,2020
-iPhone 13,2021
-iPhone 14,2022
-iPhone 15,2023
-iPhone 16,2024
-iPhone 17,2025
-iPhone 18,2026
-iPhone Air,2025
-iPhone Duo,2026
-iPhone X,2017
-iPhone XR,2018
-iPhone XS,2018

@@ -580,3 +580,108 @@ Google,6.7,12.0,512.0,50.0,5000,UK Used,2021,Pixel,Pro,1050000
 Samsung,7.6,12.0,256.0,50.0,4400,Premium Repack,2023,Galaxy Z,Foldable,2290000
 Samsung,7.6,12.0,512.0,50.0,4400,Premium Repack,2023,Galaxy Z,Foldable,2390000
 Samsung,7.6,12.0,1024.0,50.0,4400,Premium Repack,2023,Galaxy Z,Foldable,2690000
+Apple,6.3,12.0,512.0,48.0,4288,Brand New,2026,iPhone,Pro,7500000
+Apple,6.3,12.0,256.0,48.0,4288,Brand New,2026,iPhone,Pro,5950000
+Google,6.3,12.0,256.0,48.0,4850,Brand New,2026,Pixel,Pro,4250000
+Google,6.8,12.0,256.0,48.0,5115,Brand New,2026,Pixel,Pro Max,4498000
+Google,6.8,12.0,512.0,48.0,5115,Brand New,2026,Pixel,Pro Max,5300000
+Xiaomi,6.77,8.0,256.0,108.0,6000,Brand New,2025,Redmi Note,Base,970000
+Xiaomi,6.77,8.0,256.0,200.0,6500,Brand New,2025,Redmi Note,Pro,1250000
+Xiaomi,6.83,12.0,256.0,200.0,6580,Brand New,2025,Redmi Note,Pro,1390000
+Xiaomi,6.83,12.0,512.0,200.0,6500,Brand New,2025,Redmi Note,Pro Max,1750000
+Xiaomi,6.83,12.0,256.0,200.0,6500,Brand New,2025,Redmi Note,Pro Max,1650000
+Oppo,6.75,8.0,128.0,13.0,6100,Brand New,2025,Oppo A,Base,760000
+OnePlus,6.83,12.0,256.0,50.0,7400,Brand New,2025,OnePlus,Base,2350000
+Samsung,8.0,12.0,256.0,200.0,5000,Brand New,2026,Galaxy Z,Foldable,6050000
+Samsung,8.0,12.0,512.0,200.0,5000,Brand New,2026,Galaxy Z,Foldable,6550000
+Samsung,8.0,16.0,512.0,200.0,5000,Brand New,2026,Galaxy Z,Foldable,6800000
+Samsung,6.9,12.0,256.0,50.0,4300,Brand New,2026,Galaxy Z,Foldable,4800000
+Samsung,7.6,12.0,256.0,50.0,4800,Brand New,2026,Galaxy Z,Foldable,5750000
+Samsung,7.6,12.0,512.0,50.0,4800,Brand New,2026,Galaxy Z,Foldable,5900000
+Samsung,6.7,6.0,128.0,50.0,5000,Brand New,2025,Galaxy F/M,Base,900000
+Samsung,6.7,8.0,128.0,50.0,5000,Brand New,2025,Galaxy F/M,Base,1180000
+Samsung,6.7,8.0,256.0,50.0,5000,Brand New,2025,Galaxy F/M,Base,1300000
+Samsung,6.7,8.0,128.0,50.0,5000,Brand New,2025,Galaxy F/M,Base,1150000
+Samsung,6.7,8.0,256.0,50.0,5000,Brand New,2025,Galaxy F/M,Base,1250000
+Google,6.4,16.0,256.0,48.0,5015,Brand New,2025,Pixel,Foldable,4980000
+Google,6.4,16.0,512.0,48.0,5015,Brand New,2025,Pixel,Foldable,5850000
+Google,6.3,8.0,128.0,48.0,4300,Brand New,2026,Pixel,Lite,1950000
+Samsung,6.7,8.0,256.0,50.0,5000,Brand New,2026,Galaxy A,Base,1400000
+Samsung,6.7,8.0,128.0,50.0,5000,Brand New,2026,Galaxy A,Base,1280000
+Samsung,6.7,12.0,512.0,50.0,5000,Brand New,2026,Galaxy A,Pro,1950000
+Samsung,6.7,8.0,128.0,50.0,5000,Brand New,2026,Galaxy A,Pro,1500000
+Samsung,6.7,8.0,256.0,50.0,5000,Brand New,2026,Galaxy A,Pro,1650000
+Samsung,6.7,12.0,256.0,50.0,5000,Brand New,2026,Galaxy A,Pro,1750000
+Samsung,6.9,12.0,512.0,200.0,5000,Brand New,2026,Galaxy S,Ultra,4540000
+Samsung,6.9,12.0,256.0,200.0,5000,Brand New,2026,Galaxy S,Ultra,3800000
+Samsung,6.9,16.0,1024.0,200.0,5000,Brand New,2026,Galaxy S,Ultra,5250000
+Samsung,6.3,12.0,256.0,50.0,4300,Brand New,2026,Galaxy S,Base,2700000
+Samsung,6.7,12.0,256.0,50.0,4900,Brand New,2026,Galaxy S,Plus,3150000
+Samsung,7.6,12.0,512.0,50.0,4400,Brand New,2024,Galaxy Z,Foldable,4700000
+Samsung,7.6,12.0,256.0,50.0,4400,Brand New,2024,Galaxy Z,Foldable,3900000
+Samsung,6.2,8.0,256.0,50.0,4000,Brand New,2024,Galaxy S,Base,1750000
+Samsung,6.2,8.0,128.0,50.0,4000,Brand New,2024,Galaxy S,Base,1650000
+Samsung,6.7,12.0,256.0,50.0,4900,Brand New,2024,Galaxy S,Plus,1980000
+Samsung,7.6,12.0,512.0,50.0,4400,Brand New,2023,Galaxy Z,Foldable,3200000
+Samsung,7.6,12.0,256.0,50.0,4400,Brand New,2023,Galaxy Z,Foldable,2990000
+Samsung,6.7,8.0,256.0,12.0,3700,Brand New,2023,Galaxy Z,Foldable,2100000
+Xiaomi,6.9,4.0,128.0,50.0,6000,Brand New,2025,Redmi,Base,600000
+Xiaomi,6.9,8.0,256.0,50.0,6000,Brand New,2025,Redmi,Base,720000
+Xiaomi,6.67,8.0,256.0,108.0,5500,Brand New,2024,Redmi Note,Base,750000
+Xiaomi,6.67,8.0,256.0,200.0,5500,Brand New,2024,Redmi Note,Pro,930000
+OnePlus,6.82,16.0,512.0,50.0,5400,Brand New,2023,OnePlus,Base,2799000
+Google,6.3,16.0,256.0,48.0,3267,Brand New,2024,Pixel,Foldable,3900000
+Google,6.3,16.0,128.0,50.0,4870,Brand New,2025,Pixel,Pro,3550000
+Google,6.8,16.0,256.0,50.0,5060,Brand New,2024,Pixel,Pro Max,2850000
+Google,6.8,16.0,128.0,50.0,5060,Brand New,2024,Pixel,Pro Max,2600000
+Google,6.3,16.0,512.0,50.0,4700,Brand New,2024,Pixel,Pro,2600000
+Google,6.3,16.0,256.0,50.0,4700,Brand New,2024,Pixel,Pro,2400000
+Google,6.7,12.0,128.0,50.0,5050,Brand New,2023,Pixel,Pro,1995000
+Google,6.3,8.0,128.0,50.0,4355,Brand New,2022,Pixel,Base,1350000
+Google,6.8,16.0,512.0,50.0,5200,Brand New,2025,Pixel,Pro Max,4650000
+Google,6.3,8.0,128.0,48.0,4300,Brand New,2025,Pixel,Lite,1880000
+Samsung,6.7,6.0,128.0,50.0,5000,Brand New,2025,Galaxy A,Lite,800000
+Samsung,6.7,4.0,128.0,50.0,5000,Brand New,2025,Galaxy A,Lite,725000
+Samsung,6.9,12.0,256.0,50.0,4300,Brand New,2025,Galaxy Z,Foldable,2850000
+Apple,6.5,8.0,256.0,48.0,3149,Brand New,2025,iPhone,Plus,3700000
+Samsung,6.7,12.0,256.0,50.0,4000,Brand New,2024,Galaxy Z,Foldable,2650000
+Apple,6.3,8.0,128.0,48.0,3582,Brand New,2024,iPhone,Pro,3850000
+Apple,6.7,8.0,256.0,48.0,3600,Brand New,2023,iPhone,Pro Max,4100000
+Apple,6.1,8.0,256.0,48.0,4220,Brand New,2025,iPhone,Base,3850000
+Apple,6.1,8.0,512.0,48.0,4220,Brand New,2025,iPhone,Base,4100000
+Apple,6.1,8.0,256.0,48.0,4220,Brand New,2025,iPhone,Base,3600000
+Samsung,6.7,4.0,128.0,50.0,5000,Brand New,2024,Galaxy A,Lite,500000
+Samsung,6.7,8.0,256.0,50.0,5000,Brand New,2025,Galaxy A,Base,1270000
+Samsung,6.7,4.0,128.0,50.0,5000,Brand New,2023,Galaxy A,Lite,400000
+Samsung,6.7,8.0,128.0,50.0,4900,Brand New,2025,Galaxy S,Lite,2250000
+Apple,6.3,12.0,512.0,48.0,4565,Brand New,2025,iPhone,Pro,6950000
+Samsung,8.0,12.0,1024.0,200.0,4400,Brand New,2025,Galaxy Z,Foldable,5400000
+Samsung,8.0,12.0,512.0,200.0,4400,Brand New,2025,Galaxy Z,Foldable,4900000
+Samsung,8.0,12.0,512.0,200.0,4400,Brand New,2025,Galaxy Z,Foldable,5050000
+Samsung,8.0,12.0,256.0,200.0,4400,Brand New,2025,Galaxy Z,Foldable,4850000
+Samsung,8.0,12.0,256.0,200.0,4400,Brand New,2025,Galaxy Z,Foldable,4700000
+Samsung,6.7,4.0,128.0,50.0,5000,Brand New,2025,Galaxy A,Lite,590000
+Samsung,6.7,4.0,64.0,50.0,5000,Brand New,2025,Galaxy A,Lite,540000
+Samsung,6.7,6.0,128.0,50.0,5000,Brand New,2025,Galaxy A,Base,1000000
+Samsung,6.7,8.0,256.0,50.0,5000,Brand New,2025,Galaxy A,Pro,1500000
+Samsung,6.7,8.0,128.0,50.0,5000,Brand New,2025,Galaxy A,Pro,1350000
+Samsung,6.9,12.0,512.0,200.0,5000,Brand New,2025,Galaxy S,Ultra,4980000
+Samsung,6.9,12.0,256.0,200.0,5000,Brand New,2025,Galaxy S,Ultra,3600000
+Apple,6.1,6.0,256.0,12.0,3279,Brand New,2022,iPhone,Base,2850000
+Apple,6.7,6.0,128.0,48.0,4383,Brand New,2023,iPhone,Plus,3250000
+Apple,6.1,6.0,128.0,12.0,3279,Brand New,2022,iPhone,Base,2200000
+Apple,6.1,4.0,128.0,12.0,3240,Brand New,2021,iPhone,Base,1950000
+Apple,6.9,12.0,1024.0,48.0,5088,Brand New,2025,iPhone,Pro Max,7150000
+Apple,6.9,12.0,512.0,48.0,5088,Brand New,2025,iPhone,Pro Max,6750000
+Apple,6.9,12.0,512.0,48.0,5088,Brand New,2025,iPhone,Pro Max,6250000
+Apple,6.9,12.0,512.0,48.0,5088,Brand New,2025,iPhone,Pro Max,6350000
+Apple,6.9,12.0,256.0,48.0,5088,Brand New,2025,iPhone,Pro Max,5600000
+Apple,6.9,12.0,256.0,48.0,5088,Brand New,2025,iPhone,Pro Max,5650000
+Apple,6.9,8.0,512.0,48.0,4685,Brand New,2024,iPhone,Pro Max,4750000
+Apple,6.9,8.0,512.0,48.0,4685,Brand New,2024,iPhone,Pro Max,4950000
+Apple,6.9,8.0,256.0,48.0,4685,Brand New,2024,iPhone,Pro Max,4400000
+Apple,6.9,8.0,256.0,48.0,4685,Brand New,2024,iPhone,Pro Max,4750000
+Apple,6.1,8.0,256.0,48.0,3561,Brand New,2024,iPhone,Base,3400000
+Apple,6.1,8.0,128.0,48.0,3561,Brand New,2024,iPhone,Base,3100000
+Samsung,6.7,6.0,128.0,50.0,5000,Brand New,2024,Galaxy A,Lite,700000
+Samsung,6.7,4.0,128.0,50.0,5000,Brand New,2024,Galaxy A,Lite,650000

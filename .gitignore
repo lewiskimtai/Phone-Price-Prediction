@@ -1,0 +1,13 @@
+# Python environment and caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local editor and AI tool folders
+.claude/
+.agents/
+.vscode/

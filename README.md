@@ -11,6 +11,7 @@ This project comprises of four code file:
 
 - #### jumia_webscrapper.ipynb 
     - Scrapes data about phones sold on MobileShop Uganda ["https://mobileshop.ug/category/mobile-phones"] and saves into [Phones.csv] 
+    - Scrapes Dondolo ["https://dondolo.co.ug/product-category/smartphones/"] and saves into [Phones_dondolo.csv]; each shop has its own file, so rerunning one scraper never touches the other shop's data
     - It loads that data and removes any discrepancies making the data clean and saves it in [phone_df.csv].
 
 - #### phone.ipynb 
