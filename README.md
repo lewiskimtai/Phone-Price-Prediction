@@ -10,7 +10,7 @@ There are very many brands of phones in the market today and these brands come w
 This project comprises of four code file:
 
 - #### jumia_webscrapper.ipynb 
-    - Scrapes data about phones sold on jumia website ["https://www.jumia.ug/smartphones/"] and saves into [Phones.csv] 
+    - Scrapes data about phones sold on MobileShop Uganda ["https://mobileshop.ug/category/mobile-phones"] and saves into [Phones.csv] 
     - It loads that data and removes any discrepancies making the data clean and saves it in [phone_df.csv].
 
 - #### phone.ipynb 
@@ -21,13 +21,20 @@ This project comprises of four code file:
     - Saves the model into the [phone_price_prediction.pkl] file.
 
 - #### main.py 
-    - Loads the model and uses FASTAPI to create an API hosted on Heroku. 
-    - Manages requests and makes predictions based on the parameters.
+    - Loads the model and uses FastAPI to serve the web page and the API.
+    - `/predict` returns the estimated price and its likely range (from [price_range.json], saved by phone.ipynb).
+    - `/options` gives the page its brands, product lines, tiers, typical specs and the shop listings.
 
-- #### streamlit.py 
-    - The API endpoint that comprises of the User Interface in Streamlit.
-    - Takes in user inputs and passes the values through the API and makes predictions.
-    - Also comprises of the Exploratory Data Analysis functionality that is a dashboard for the user to visualize the data.
+- #### static/ (index.html, styles.css, app.js)
+    - The user interface, in plain HTML, CSS and JavaScript.
+    - Takes in the phone's details, shows a live price estimate and places it on a price ruler of every phone on sale.
+
+## Run the app
+```sh
+venv\Scripts\activate
+python main.py
+```
+Then open http://127.0.0.1:8001. The app uses port 8001 so it can run alongside a Django dev server on 8000.
 
 ## Tools used:
 As seen in the [requirements.txt] file

@@ -6,15 +6,19 @@ import numpy as np
 import plotly.express as px
 import streamlit.components.v1 as components
 import requests
+import os
 
 # Dataset
 url = "phone_df.csv"
 
 # Prediction Function connected to the FAST API
-def get_predictions(brand, screen_size, ram, rom, mp, battery):
-    url = 'https://phone-price-pred.herokuapp.com/predict?brand={brand}&screen_size={screen_size}&ram={ram}&rom={rom}&mp={mp}&battery={battery}' \
-        .format(brand=brand, screen_size=screen_size, ram=ram, rom=rom, mp=mp, battery=battery)
-    response = requests.post(url)
+# Address of the prediction API (main.py); set the API_URL environment variable to use a deployed one
+API_URL = os.environ.get('API_URL', 'http://127.0.0.1:8001/predict')
+
+def get_predictions(brand, screen_size, ram, rom, mp, battery, condition, release_year, series, tier):
+    params = dict(brand=brand, screen_size=screen_size, ram=ram, rom=rom, mp=mp, battery=battery,
+                  condition=condition, release_year=release_year, series=series, tier=tier)
+    response = requests.post(API_URL, params=params)
     json_response = response.json()
     price=json_response['prediction']
     return price
@@ -23,7 +27,7 @@ def get_predictions(brand, screen_size, ram, rom, mp, battery):
 st.sidebar.image('photos/logo.png')
 st.sidebar.header("Phone Price Prediction")
 menu = ['Get Price','Exploratory Data Analysis','About']
-selection = st.sidebar.selectbox("", menu)
+selection = st.sidebar.selectbox("Menu", menu, label_visibility="collapsed")
 
 st.sidebar.write('Predicting prices of phones in relation to their specs is helpful to gadget retailers to set prices varying to specs and also helpful to buyers to buy their dream phones with particular specs at affordable prices.')
 
@@ -34,18 +38,37 @@ if selection == 'Get Price':
         st.image('photos/phones.jpg')
         st.title('Enter your dream phone features')
         st.image('photos/specs.png')
-        brand = st.selectbox('Select Brand', ['', 'Nokia', 'Samsung', 'Infinix', 'Tecno', 'Redmi', 'Itel', 'Vivo', 'Hisence', 'Oppo', 'Motorola', 'Realme'], index=0)
+        # Brands, product lines and tiers come from the training data, so the options always match the model
+        phone_options = pd.read_csv(url)
+        lines_by_brand = phone_options.groupby('brand')['series'].unique()
+        tiers_by_line = phone_options.groupby(['brand', 'series'])['tier'].unique()
+        brand = st.selectbox('Select Brand', sorted(lines_by_brand.index), index=0)
+        series = st.selectbox('Select Product Line', sorted(lines_by_brand[brand]), index=0)
+        tiers = {
+            'Lite': 'Cheaper version: FE, Lite, mini, "a" models, Galaxy A0x/A1x (e.g. Galaxy S24 FE, Pixel 9a)',
+            'Base': 'Standard model, no suffix (e.g. iPhone 16, Galaxy S25, Tecno Spark 50)',
+            'Plus': 'Bigger standard model: Plus, Max, Air, Edge (e.g. iPhone 16 Plus, Galaxy S25 Plus)',
+            'Pro': 'Pro models, Galaxy A5x (e.g. iPhone 15 Pro, Pixel 9 Pro, Galaxy A56)',
+            'Pro Max': 'Top Pro model: Pro Max, Pro XL, Pro Plus (e.g. iPhone 15 Pro Max, Pixel 9 Pro XL)',
+            'Ultra': 'Ultra models (e.g. Galaxy S25 Ultra, Xiaomi 17 Ultra)',
+            'Foldable': 'Fold, Flip and other folding phones (e.g. Galaxy Z Fold 7, Razr 50s)',
+        }
+        # Only the tiers this product line has, in price order
+        line_tiers = [t for t in tiers if t in tiers_by_line[(brand, series)]]
+        tier = st.selectbox('Select Tier', line_tiers, index=0, format_func=lambda t: f'{t}: {tiers[t]}')
         screen_size = st.number_input("Enter screen_size (Size of the screen)")
         ram = st.number_input("Enter RAM capacity (RAM defines how fast the phone is)")
         rom = st.number_input("Enter ROM capacity (ROM defines memory storage)")
         mp = st.number_input("Enter Megapixels (Defines the resolution and quality of photos taken)")
         battery = st.number_input("Enter battery capacity (Defines battery life)")
+        condition = st.selectbox('Select Condition', ['Brand New', 'UK Used', 'Premium Repack'], index=0)
+        release_year = st.number_input("Enter release year (Year the phone model came out)", min_value=2015, max_value=2030, value=2025, step=1)
 
         result = ""
 
-        # when 'Predict' is clicked, make the prediction and store it
+        # when 'Predict' is clicked, make the prediction and store it (the API already returns the price in UGX)
         if st.button("Predict"):
-            result = int(np.exp(get_predictions(brand=brand, screen_size=screen_size, ram=ram, rom=rom, mp=mp, battery=battery)))
+            result = int(get_predictions(brand=brand, screen_size=screen_size, ram=ram, rom=rom, mp=mp, battery=battery, condition=condition, release_year=release_year, series=series, tier=tier))
             st.success(f'Price of Phone: {result} UGX')
             st.image('photos/phoness.jpg')
 

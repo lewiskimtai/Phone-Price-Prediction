@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phone price check</title>
+  <meta name="description" content="Estimate what a Kampala phone shop would ask for a phone, in Uganda shillings, or compare two phones.">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Hanken+Grotesk:wght@400;500;600&family=Martian+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <p class="eyebrow" id="data-note">Prices learned from phones on sale at MobileShop Uganda</p>
+      <h1>What should this phone cost?</h1>
+      <p class="lede">Describe a phone to see the price a Kampala shop would likely ask, in Uganda shillings, or compare two phones side by side.</p>
+    </header>
+
+    <main class="layout" id="layout">
+      <div class="phones-column">
+        <div class="phones" id="phones"></div>
+        <button type="button" class="compare-button" id="compare-button">Compare with another phone</button>
+      </div>
+
+      <section class="result" id="result" aria-labelledby="result-label">
+        <p class="result-label" id="result-label">Estimated shop price</p>
+        <div id="estimates" aria-live="polite">
+          <p class="range">Choose a phone to see its price.</p>
+        </div>
+        <p class="comparison" id="comparison" aria-live="polite" hidden></p>
+
+        <div class="ruler" id="ruler" role="img" aria-label="Price ruler">
+          <div class="ruler-ticks" id="ruler-ticks"></div>
+          <div class="ruler-axis"></div>
+          <div class="ruler-labels" id="ruler-labels"></div>
+        </div>
+        <p class="legend" id="legend"></p>
+
+        <p class="status" id="status" role="alert" hidden></p>
+      </section>
+    </main>
+
+    <!-- Phones only: keeps the estimates in view while editing the forms -->
+    <a class="price-bar" id="price-bar" href="#result" hidden>
+      <span class="price-bar-label">Estimated shop price</span>
+      <span class="price-bar-values" id="price-bar-values"></span>
+    </a>
+
+    <footer class="about">
+      <h2>How the estimate works</h2>
+      <p>A gradient boosting model learned prices from phones listed on <a href="https://mobileshop.ug/category/mobile-phones">mobileshop.ug</a>, using brand, product line, tier, release year, condition and specs. Half of its estimates land within 7% of the shop's real price. For models the shop has never sold, expect them to be about 11% off. The shaded range is where 8 in 10 real prices fall.</p>
+    </footer>
+  </div>
+
+  <!-- One phone's form; app.js adds a copy per phone (A, and B when comparing) -->
+  <template id="phone-template">
+    <form class="phone-form" novalidate>
+      <div class="phone-head">
+        <h2 class="phone-title"><span class="phone-tag"></span><span class="phone-title-text"></span></h2>
+        <button type="button" class="remove-button">Remove</button>
+      </div>
+      <fieldset>
+        <legend>The phone</legend>
+        <div class="field">
+          <label data-for="brand">Brand</label>
+          <span class="select"><select name="brand"></select></span>
+        </div>
+        <div class="field">
+          <label data-for="series">Product line</label>
+          <span class="select"><select name="series"></select></span>
+        </div>
+        <div class="field" role="radiogroup" data-labelledby="tier-label" data-describedby="tier-hint">
+          <span class="label" data-id="tier-label">Tier</span>
+          <div class="choices" data-choices="tier"></div>
+          <p class="hint" data-id="tier-hint"></p>
+        </div>
+        <div class="field">
+          <label data-for="release_year">Release year</label>
+          <span class="select"><select name="release_year"></select></span>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Condition</legend>
+        <div class="choices" data-choices="condition" role="radiogroup" aria-label="Condition"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Specs</legend>
+        <p class="hint">Only specs of phones on sale that match your choices above are listed.</p>
+        <div class="spec-grid">
+          <div class="field">
+            <label data-for="ram">RAM</label>
+            <span class="select"><select name="ram"></select></span>
+          </div>
+          <div class="field">
+            <label data-for="rom">Storage</label>
+            <span class="select"><select name="rom"></select></span>
+          </div>
+          <div class="field">
+            <label data-for="screen_size">Screen</label>
+            <span class="select"><select name="screen_size"></select></span>
+          </div>
+          <div class="field">
+            <label data-for="mp">Main camera</label>
+            <span class="select"><select name="mp"></select></span>
+          </div>
+          <div class="field field-wide">
+            <label data-for="battery">Battery</label>
+            <span class="select"><select name="battery"></select></span>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </template>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
